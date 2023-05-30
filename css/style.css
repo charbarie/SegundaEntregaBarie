@@ -11,7 +11,7 @@ font-family: 'Roboto Slab', serif;*/
 }
 
 body{
-    
+   
     display: grid; 
     grid-template-columns: 0.7fr 1.3fr 1.3fr 0.7fr; 
     grid-template-rows: 0.6fr 2.4fr 0.5fr 0.5fr; 
@@ -23,7 +23,8 @@ body{
       "footer footer footer footer"; 
     background-color:white;
     color: black;
-    font-family: 'Inconsolata', monospace;
+   
+    font-family: 'Roboto Slab', monospace;
     font-weight: 100%;
     background-image: url(../img/Background.jpg);
     background-image: no-repeat;
@@ -34,7 +35,7 @@ body{
     -o-background-size: cover;
     background-size: cover;
     opacity: 90%;
-   
+    
   
 }
 .header{ 
@@ -117,23 +118,30 @@ body{
 
 
 
-.nav{ 
+.nav{
+    color: azure;
     padding: 20px;
     grid-area: nav;
     display: flex;
     flex-direction: column;
-    background-color: brown;
+    
+
+    border-radius: 20px;
+  
 }
 .nav h2{
     text-align: center;
     padding: 10px;
 }
 .nav div{
-    color: black;
+    color: rgb(245, 245, 245);
     padding: 10px;
     margin: 10px;
     display: column;
-    background-color: aquamarine;
+    background-color: grey;
+    border-radius: 20px;
+
+
 }
 .news{
     font-family: 'Inconsolata', monospace;
@@ -151,7 +159,7 @@ body{
     margin: 0;
     padding: 0;
     margin-bottom: 10px;
-    color: rgb(21, 42, 62);
+    color: rgb(249, 250, 250);
 
 
 }
@@ -159,6 +167,8 @@ body{
 
 .main{ 
     grid-area: main;
+    gap: 20px;
+    flex-direction: column;
     margin: 20px;
     padding-inline-start: 10px;
     grid-row: span;
@@ -167,19 +177,39 @@ body{
     
 }
 
+.main section{
+    padding: 20px;
+    
+    background-color: gray;
+    color: antiquewhite;
+    border-radius:20px ;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+
+}
+
+
 .bienvenida{
-    background-color: aqua;
+    background-color:aliceblue;
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
 }
 .bienvenida h2{
     font-family: 'Inconsolata', monospace;
     font-size:24px;
+    margin: 30px;
     font-weight: bold;
     text-align: center;
 }
 .bienvenida p{
     background-color: aliceblue;
     margin: 20px;
-    padding: 10px;
+    padding: 30px;
     font-family: 'Inconsolata', monospace;
     font-size: 1rem;
     line-height: 1.5;
@@ -192,7 +222,7 @@ body{
 
 .aside { 
     grid-area: aside;
-    background-color: antiquewhite;
+
     align-items: center;
     justify-content: center;
     padding: 30px;
@@ -299,7 +329,7 @@ form{
     height: 20px 12px ;
     text-align: center;
     color: black;
-    background-color: beige;
+   
     border-radius: 10px;
     -webkit-border-radius: 10px;
     -moz-border-radius: 10px;
@@ -394,13 +424,7 @@ footer a:hover{
         padding: 20px;
         height: 20px 12px ;
         text-align: center;
-        color: black;
-        background-color: beige;
-        border-radius: 10px;
-        -webkit-border-radius: 10px;
-        -moz-border-radius: 10px;
-        -ms-border-radius: 10px;
-        -o-border-radius: 10px;
+
     }
 
 
