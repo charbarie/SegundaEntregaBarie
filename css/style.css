@@ -26,7 +26,7 @@ body{
    
     font-family: 'Roboto Slab', monospace;
     font-weight: 100%;
-    background-image: url(../img/Background.jpg);
+    background-image: url(/img/Background.jpg);
     background-image: no-repeat;
     background-image: fixed;
     background-image: center;
@@ -385,7 +385,7 @@ footer a:hover{
         display: grid; 
         grid-template-columns: 0.8fr 1.2fr; 
         grid-template-rows: 0fr 0fr 0fr 0fr 0fr; 
-        gap: 2px 2px; 
+        gap: 2px; 
      
         grid-template-areas: 
           "section section"
@@ -393,6 +393,7 @@ footer a:hover{
           "nav main"
           "nav aside"
           "footer footer"; 
+        
     }
 
     
