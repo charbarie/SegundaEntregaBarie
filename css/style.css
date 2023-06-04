@@ -136,6 +136,8 @@ body{
 }
 .main{ 
     grid-area: main;
+    gap:40px;
+    padding:20px;
     background: rgb(55,57,64);
     background: radial-gradient(circle, rgba(55,57,64,0.8337492308864703) 0%, rgba(229,223,223,1) 100%);
     background-color: gray;
@@ -145,12 +147,48 @@ body{
     border-radius:20px ;
 
 }
-.newproduct{
-    display:flex;
-    background-color:gray;
-    gap:20px;
+
+
+.bienvenida{
+   
+    font-family: 'Inconsolata', monospace;
+    font-size:18px;
+    margin: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: gray;
+    border-radius:20px ;
 }
+
+.main h3{
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Inconsolata', monospace;
+    padding:20px;
+}
+
+
+.carousel{
+    text-align:com,
+}
+.carousel-item{
+    padding:0px 0px 0px 40%;
+}
+
+.carousel-indicators{
+    padding: 100px 100px .1px 100px;
     
+}
+
+
+
+
+
+
+
+
+
+
 /*
 .main{
     padding: 20px; 
@@ -163,14 +201,6 @@ body{
     -o-border-radius:20px ;
 }
 
-
-
-    border-radius: 20px;
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    -ms-border-radius: 20px;
-    -o-border-radius: 20px;
-}
 .bienvenida h2{
     font-family: 'Inconsolata', monospace;
     font-size:24px;
@@ -178,6 +208,14 @@ body{
     font-weight: bold;
     text-align: center;
 }
+
+    border-radius: 20px;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+}
+
 .bienvenida p{
     background-color: aliceblue;
     margin: 20px;
