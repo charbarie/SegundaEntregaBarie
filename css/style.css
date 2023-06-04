@@ -136,15 +136,23 @@ body{
 }
 .main{ 
     grid-area: main;
-    gap: 20px;
+    background: rgb(55,57,64);
+    background: radial-gradient(circle, rgba(55,57,64,0.8337492308864703) 0%, rgba(229,223,223,1) 100%);
+    background-color: gray;
     flex-direction: column;
-    margin: 20px;
+    margin: 10px;
     padding-inline-start: 10px;
-    grid-row: span;
-    display: flex;
-}
+    border-radius:20px ;
 
-.main section{
+}
+.newproduct{
+    display:flex;
+    background-color:gray;
+    gap:20px;
+}
+    
+/*
+.main{
     padding: 20px; 
     background-color: gray;
     color: rgb(21, 20, 20);
@@ -156,8 +164,7 @@ body{
 }
 
 
-.bienvenida{
-    background-color:aliceblue;
+
     border-radius: 20px;
     -webkit-border-radius: 20px;
     -moz-border-radius: 20px;
@@ -182,6 +189,48 @@ body{
     overflow: auto;
     
 }
+
+
+
+.nIngreso{
+    border-radius:20px ;
+    background-color: gray;
+        te:;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+}
+
+*/
+
+.carrete{
+    margin: 20px;
+    display: flex;
+    width: 1700px;
+    height: 450px;
+    padding: 0%;
+}
+.carrete img{
+ 
+    width: 4px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 70%;
+    transition: .8s ease;
+}
+.carrete img:hover{
+    align-items: center;
+    cursor: pointer;
+
+    width:400px;
+    opacity: 100%;
+    filter: contrast(140%);
+    -ms-zoom-animation: calc(20%);
+    max-zoom: 30;
+}
+
+
 
 
 
@@ -326,9 +375,7 @@ footer a:hover{
         grid-template-columns: 0.8fr 1.2fr; 
         grid-template-rows: 0fr 0fr 0fr 0fr 0fr; 
         gap: 2px; 
-     
         grid-template-areas: 
-          "section section"
           "header header"
           "nav main"
           "nav aside"
