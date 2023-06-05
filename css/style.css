@@ -30,6 +30,10 @@ body{
     background-size: cover;
     opacity: 90%;
 }
+h1{
+    color: white;
+    text-align: center;
+}
 .header{ 
     
     flex-direction: flex;
@@ -345,12 +349,13 @@ footer a:hover{
         font-size: 36px;
         justify-content: center;
         list-style: none;
+     
     }
     .menu ul{
         padding: 1px;
     }
     .menu li{
-        padding-left: 20px;
+        padding-left: 5%;
         display: inline-block;    
     }
     .menu li a{
