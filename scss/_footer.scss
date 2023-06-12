@@ -1,0 +1,27 @@
+.footer{
+    grid-area: footer;
+    justify-content:end;
+
+  
+  
+    font-family: 'Oswald', sans-serif;
+    font-size: 12;
+    background: rgb(162,123,92);
+    background: linear-gradient(0deg, rgba(162,123,92,0.928921568627451) 30%, rgba(44,54,57,1) 95%);
+}
+
+footer h2{
+    color: white;
+    padding: 2px;
+    } 
+.footer p{
+    padding: 1px;
+    font-size: 24px;
+}
+footer a{
+    color: white;
+    text-decoration: none;
+}
+footer a:hover{
+    text-decoration: underline;
+}

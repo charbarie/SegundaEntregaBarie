@@ -1,0 +1,153 @@
+.main{
+    grid-area: main;
+    
+    display: flex;
+    padding:20px;
+    background: rgb(162,123,92);
+    background: linear-gradient(180deg, rgba(162,123,92,1) 36%, rgba(44,54,57,0.7958365475096288) 68%);
+    background-color: gray;
+    flex-direction: column;
+    margin: 10px;
+    padding-inline-start: 10px;
+    border-radius:20px ;
+    -webkit-border-radius:20px ;
+    -moz-border-radius:20px ;
+    -ms-border-radius:20px ;
+    -o-border-radius:20px ;
+}
+.bienvenida{
+   
+    font-family: 'Inconsolata', monospace;
+    font-size:18px;
+    margin: 30px;
+    font-weight: bold;
+    text-align: center;
+    background-color: gray;
+    border-radius:20px ;
+}
+
+.main h3{
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Inconsolata', monospace;
+    padding:20px;
+    text-decoration:underline;
+}
+.carousel-indicators{
+    padding: opx 0px 0px 100px;
+}
+.carousel-item{
+    padding:0px 0px 0px 40%;
+    transition: .8s ease;
+}
+
+
+.menuVenta{
+    font-family: 'Inconsolata', monospace;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+} 
+
+
+.menuVenta img{
+    width: 200px;
+    min-height: 150px;
+    opacity: none;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+    border-color: black;
+    border-style: double;
+}
+
+ .productos{
+    display: flex;
+    color: white;
+    padding: 30px ;
+    font-size: 28px;
+
+}
+.productos li{
+    list-style: none;
+    font-size: 28px;
+}
+.productos input{
+    width: 20px;
+}
+
+
+.noticias section{
+    background-color: bisque;
+    text-align: center;
+    padding: 2em;
+    margin: 40px;
+}
+.noticias h1{
+    font-family: 'Inconsolata', monospace;
+    margin: 10px;
+    padding: 12px;
+    text-align: center;
+    display: center;
+}
+
+.Nos{
+    grid-area: main;
+    font-family: 'Inconsolata', monospace;
+    background-color: aliceblue;
+    margin: 60px 100px;
+    padding: 60px;
+    height: auto;
+    text-align: center;
+}
+    form{
+        font-family: 'Roboto Slab', serif;
+        font-size: 20px;
+        margin: 20px 500px;
+        padding: 20px;
+        height: 20px 12px ;
+        text-align: center;
+        color: black;
+        border-radius: 10px;
+        -webkit-border-radius: 10px;
+        -moz-border-radius: 10px;
+        -ms-border-radius: 10px;
+        -o-border-radius: 10px;
+    }
+    form div{
+        text-justify: start;
+        margin-bottom: 2px; 
+        font-size: 20px;
+        font-weight: bold;
+    }
+
+    
+.carrete{
+    margin: 20px;
+    display: flex;
+    width: 1700px;
+    height: 450px;
+    padding: 0%;
+}
+.carrete img{
+ 
+    width: 4px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 70%;
+    transition: .8s ease;
+}
+.carrete img:hover{
+    align-items: center;
+    cursor: pointer;
+
+    width:400px;
+    opacity: 100%;
+    filter: contrast(140%);
+    -ms-zoom-animation: calc(20%);
+    max-zoom: 30;
+}
