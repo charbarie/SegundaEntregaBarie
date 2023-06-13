@@ -292,7 +292,8 @@ form div {
   display: flex;
   flex-direction: column;
   background: #a27b5c;
-  background: radial-gradient(circle, #a27b5c 10%, #2c3639 85%); }
+  background: radial-gradient(circle, #a27b5c 10%, #2c3639 85%);
+  border-radius: 20px; }
 
 .aside div {
   padding: 30px;
