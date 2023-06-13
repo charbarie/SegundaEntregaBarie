@@ -1,12 +1,12 @@
 body {
   display: grid;
-  grid-template-columns: 0.5fr 1.9fr 0.6fr;
-  grid-template-rows: 0.2fr 1.3fr 0.1fr;
+  grid-template-columns: 0.9fr 1.7fr 0.4fr;
+  grid-template-rows: 0.4fr 2.2fr 0.4fr;
   gap: 8px 8px;
   grid-template-areas: "header header header" "nav main aside" "footer footer footer";
   background-color: white;
   font-family: 'Roboto Slab', monospace;
-  font-weight: 100%;
+  font-weight: auto;
   background-image: url(../img/background.jpg);
   background-image: no-repeat;
   background-image: fixed;
@@ -19,13 +19,15 @@ body {
 
 h1 {
   color: white;
-  text-align: center; }
+  text-align: center;
+  text-decoration: underline;
+  padding: 5px; }
 
 .redes {
   display: flex;
   flex-direction: column;
   position: fixed;
-  left: 90%;
+  left: 94%;
   top: 60%;
   top: 1x; }
 
@@ -99,7 +101,8 @@ h1 {
   background: #a27b5c;
   background: radial-gradient(circle, #a27b5c 10%, #2c3639 85%); }
   .nav h2 {
-    text-decoration: underline dotted black;
+    color: aliceblue;
+    text-decoration: underline dotted gainsboro;
     text-align: center;
     padding: 10px;
     justify-self: start; }
@@ -107,12 +110,19 @@ h1 {
     color: whitesmoke;
     padding: 20px;
     margin: 10px;
-    display: column;
+    display: flex;
+    text-align: center;
     background-color: #2c3639;
     border-radius: 20px;
     padding-inline-start: 10px; }
+  .nav.nos {
+    opacity: 0%; }
+  .nav.contactanos {
+    opacity: 0%; }
 
 .news {
+  display: flex;
+  flex-direction: column;
   font-family: 'Inconsolata', monospace;
   font-size: 1.5rem;
   line-height: 1.5;
@@ -121,7 +131,9 @@ h1 {
   overflow: auto;
   color: #f9fafa; }
   .news h2 {
-    text-align: center; }
+    text-align: auto;
+    font-size: 18px;
+    line-height: normal; }
   .news p {
     font-family: 'Roboto Slab', serif;
     font-size: 1rem;
@@ -131,8 +143,10 @@ h1 {
 
 .main {
   grid-area: main;
+  margin: auto;
   display: flex;
-  padding: 20px;
+  justify-content: auto;
+  padding: auto;
   background: #a27b5c;
   background: linear-gradient(180deg, #a27b5c 36%, rgba(44, 54, 57, 0.795837) 68%);
   background-color: gray;
@@ -146,13 +160,18 @@ h1 {
   -o-border-radius: 20px; }
 
 .bienvenida {
+  color: white;
   font-family: 'Inconsolata', monospace;
   font-size: 18px;
   margin: 30px;
   font-weight: bold;
-  text-align: center;
   background-color: gray;
   border-radius: 20px; }
+  .bienvenida p {
+    text-align: center;
+    justify-content: auto;
+    margin: 50px;
+    height: auto; }
 
 .main h3 {
   color: white;
@@ -162,30 +181,22 @@ h1 {
   padding: 20px;
   text-decoration: underline; }
 
-.carousel-indicators {
-  padding: opx 0px 0px 100px; }
-
-.carousel-item {
-  padding: 0px 0px 0px 40%;
-  transition: .8s ease; }
-
 .menuVenta {
   font-family: 'Inconsolata', monospace;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around; }
-
-.menuVenta img {
-  width: 200px;
-  min-height: 150px;
-  opacity: none;
-  border-radius: 30%;
-  -webkit-border-radius: 30%;
-  -moz-border-radius: 30%;
-  -ms-border-radius: 30%;
-  -o-border-radius: 30%;
-  border-color: black;
-  border-style: double; }
+  .menuVenta img {
+    width: 200px;
+    min-height: 150px;
+    opacity: none;
+    border-radius: 30%;
+    -webkit-border-radius: 30%;
+    -moz-border-radius: 30%;
+    -ms-border-radius: 30%;
+    -o-border-radius: 30%;
+    border-color: black;
+    border-style: double; }
 
 .productos {
   display: flex;
@@ -200,6 +211,12 @@ h1 {
 .productos input {
   width: 20px; }
 
+.carousel img {
+  width: 250px; }
+
+.carousel-control {
+  color: black; }
+
 .noticias section {
   background-color: bisque;
   text-align: center;
@@ -213,14 +230,15 @@ h1 {
   text-align: center;
   display: center; }
 
-.Nos {
+.nos {
+  color: white;
   grid-area: main;
   font-family: 'Inconsolata', monospace;
-  background-color: aliceblue;
   margin: 60px 100px;
   padding: 60px;
   height: auto;
-  text-align: center; }
+  text-align: center;
+  font-size: 2rem; }
 
 form {
   font-family: 'Roboto Slab', serif;
@@ -243,27 +261,28 @@ form div {
   font-weight: bold; }
 
 .carrete {
+  padding-top: 70px;
   margin: 20px;
   display: flex;
-  width: 1700px;
-  height: 450px;
-  padding: 0%; }
-
-.carrete img {
-  width: 4px;
-  flex-grow: 1;
-  object-fit: cover;
-  opacity: 70%;
-  transition: .8s ease; }
-
-.carrete img:hover {
-  align-items: center;
-  cursor: pointer;
-  width: 400px;
-  opacity: 100%;
-  filter: contrast(140%);
-  -ms-zoom-animation: calc(20%);
-  max-zoom: 30; }
+  width: 700px;
+  height: 600px;
+  align-self: center; }
+  .carrete img {
+    width: 20px;
+    flex-grow: 1;
+    object-fit: cover;
+    opacity: 100%;
+    transition: .6s ease; }
+    .carrete img:hover {
+      opacity: initial;
+      align-items: center;
+      cursor: pointer;
+      width: 500px;
+      opacity: 100%;
+      filter: contrast(140%);
+      background-color: black;
+      backface-visibility: visible;
+      zoom: 1; }
 
 .aside {
   gap: 8px 8px;

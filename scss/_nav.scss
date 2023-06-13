@@ -1,4 +1,4 @@
-.nav{
+.nav {
     gap: 8px 8px; 
     grid-area: nav;
     padding:5px;
@@ -9,7 +9,8 @@
     background: rgb(162,123,92);
     background: radial-gradient(circle, rgba(162,123,92,1) 10%, rgba(44,54,57,1) 85%);
     & h2{
-        text-decoration: underline dotted black;
+        color: aliceblue;
+        text-decoration: underline dotted gainsboro;
         text-align: center;
         padding: 10px;
         justify-self: start;
@@ -18,13 +19,25 @@
         color: rgb(245, 245, 245);
         padding: 20px;
         margin: 10px;
-        display: column;
+        display: flex;
+        text-align: center;
         background-color: rgb(44, 54, 57);
         border-radius: 20px;
         padding-inline-start: 10px;
     }
+    &.nos {
+        opacity: 0%;
+            
+        }
+    &.contactanos {
+            opacity: 0%;
+                
+            }
+
 }
 .news{
+        display: flex;
+        flex-direction: column;
         font-family: 'Inconsolata', monospace;
         font-size: 1.5rem;
         line-height: 1.5;
@@ -33,7 +46,9 @@
         overflow: auto;
         color: rgb(249, 250, 250);
         & h2{
-            text-align: center;
+            text-align: auto;
+            font-size: 18px;
+            line-height: normal;
         }
         & p{
             font-family: 'Roboto Slab', serif;
@@ -42,4 +57,7 @@
             margin: 0;
             padding: 0;
         }
+    
+
+
 }
