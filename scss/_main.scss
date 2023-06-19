@@ -1,6 +1,6 @@
 .main{
     grid-area: main;
-    margin: auto;
+    margin: 10px;
     display: flex;
     justify-content: auto;
     padding:auto;
@@ -15,26 +15,22 @@
     -moz-border-radius:20px ;
     -ms-border-radius:20px ;
     -o-border-radius:20px ;
-    & h3{
+    h3{
         text-align: center;
         color: white;
     }
 }
 .bienvenida{
-    
+    background-color: rgba(44,54,57,1) ;
     color: white;
     font-family: 'Inconsolata', monospace;
     font-size:18px;
-    margin: 30px;
-    font-weight: bold;
-    
-    background-color: gray;
+    margin: 10px;
     border-radius:20px ;
-    & p {
+    p {
         text-align: center;
         justify-content: auto;
-        margin: 50px;
-        height: auto;
+        margin: 10px;
     }
 }
 
@@ -43,7 +39,15 @@
     text-align: center;
     font-size: 2rem;
     font-family: 'Inconsolata', monospace;
-    padding:20px;
+    padding-top: 20px;
+    text-decoration:underline;
+}
+.main h4{
+    margin-top: 5rem;
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Inconsolata', monospace;
     text-decoration:underline;
 }
 
@@ -83,14 +87,24 @@
 .productos input{
     width: 20px;
 }
-.carousel img{
+
+
+.carousel-item{
    
+    flex-direction: row;
+    justify-content: center;
+    padding-left: 35%;
+
+img{
+    width: 100%;
+    padding: 0%;
     width: 250px;
- 
+    box-shadow:15px 0px 0px 0px;
 }
-.carousel-control{
-    color: black;
+  
 }
+
+
 .noticias section{
     background-color: bisque;
     text-align: center;
@@ -138,7 +152,7 @@
 
     
 .carrete{
-    padding-top: 70px;
+    padding-top: 10px;
     margin: 20px;
     display: flex;
     width: 700px;

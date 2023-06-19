@@ -1,51 +1,41 @@
 .header{ 
+    padding: 0%;
     grid-area: header;
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    padding: 20px;
     background: rgb(162,123,92);
     background: linear-gradient(180deg, rgba(162,123,92,1) 36%, rgba(44,54,57,0.7958365475096288) 68%);
     font-family: 'Oswald', sans-serif;
-    .section{
+    img{
         width: 200px;
         padding: 2px;
         display: flex;
         justify-content: center;
-     
-        & img{
-            
-            width: 200px;
-            }
-    }
+        
     }
     .menu{
+        margin-top: 0px;
+        display: flex;
+        flex-direction: row;
         padding-top: 5px;
         font-size: 36px;
-       align-items: center;
-        list-style: none;
-        display: flex;
+        align-items: center;
         justify-content: space-between;
         list-style: none;
-        flex-direction: row;
-        
-
-       
         ul{
-            padding: 1px;
-            justify-content: space-between;
             list-style: none;
+            padding: 1px;
             
-            
-
-            li{
-                padding: auto;
-                display: inline-block;                                                                                                                                                                                                                                                                                                                                                                                                                                                   
+            list-style: none;
+           li{
+            justify-content: space-between;
+            padding-left: 20px;
+            display: inline-block;                                                                                                                                                                                                                                                                                                                                                                                                                                                   
                 & a{
                     text-decoration:none;
                     color: rgb(220, 215, 201);
-                    padding: 20px;
+                    padding: 2px;
                     & :hover{
                             color: black;
                             background-color:rgb(227,204,174) ;
@@ -61,4 +51,4 @@
                 }
             }
         }
-    }
+    }}

@@ -1,7 +1,7 @@
 body{
     display: grid; 
     grid-template-columns: 0.9fr 1.7fr 0.4fr; 
-    grid-template-rows: 0.4fr 2.2fr 0.4fr; 
+    grid-template-rows: 0.1fr 2.2fr 0.4fr; 
     gap: 8px 8px; 
     grid-template-areas: 
       "header header header"

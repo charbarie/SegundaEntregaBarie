@@ -1,7 +1,7 @@
 body {
   display: grid;
   grid-template-columns: 0.9fr 1.7fr 0.4fr;
-  grid-template-rows: 0.4fr 2.2fr 0.4fr;
+  grid-template-rows: 0.1fr 2.2fr 0.4fr;
   gap: 8px 8px;
   grid-template-areas: "header header header" "nav main aside" "footer footer footer";
   background-color: white;
@@ -41,54 +41,51 @@ h1 {
   -o-border-radius: 40%; }
 
 .header {
+  padding: 0%;
   grid-area: header;
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
-  padding: 20px;
   background: #a27b5c;
   background: linear-gradient(180deg, #a27b5c 36%, rgba(44, 54, 57, 0.795837) 68%);
   font-family: 'Oswald', sans-serif; }
-  .header .section {
+  .header img {
     width: 200px;
     padding: 2px;
     display: flex;
     justify-content: center; }
-    .header .section img {
-      width: 200px; }
-
-.menu {
-  padding-top: 5px;
-  font-size: 36px;
-  align-items: center;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  list-style: none;
-  flex-direction: row; }
-  .menu ul {
-    padding: 1px;
+  .header .menu {
+    margin-top: 0px;
+    display: flex;
+    flex-direction: row;
+    padding-top: 5px;
+    font-size: 36px;
+    align-items: center;
     justify-content: space-between;
     list-style: none; }
-    .menu ul li {
-      padding: auto;
-      display: inline-block; }
-      .menu ul li a {
-        text-decoration: none;
-        color: #dcd7c9;
-        padding: 20px; }
-        .menu ul li a :hover {
-          color: black;
-          background-color: #e3ccae;
-          border-radius: 50%;
-          text-decoration: underline;
-          opacity: 70%;
-          transition: .3s;
-          -webkit-transition: .3s;
-          -moz-transition: .3s;
-          -ms-transition: .3s;
-          -o-transition: .3s; }
+    .header .menu ul {
+      list-style: none;
+      padding: 1px;
+      list-style: none; }
+      .header .menu ul li {
+        justify-content: space-between;
+        padding-left: 20px;
+        display: inline-block; }
+        .header .menu ul li a {
+          text-decoration: none;
+          color: #dcd7c9;
+          padding: 2px; }
+          .header .menu ul li a :hover {
+            color: black;
+            background-color: #e3ccae;
+            border-radius: 50%;
+            text-decoration: underline;
+            opacity: 70%;
+            transition: .3s;
+            -webkit-transition: .3s;
+            -moz-transition: .3s;
+            -ms-transition: .3s;
+            -o-transition: .3s; }
 
 .nav {
   gap: 8px 8px;
@@ -143,7 +140,7 @@ h1 {
 
 .main {
   grid-area: main;
-  margin: auto;
+  margin: 10px;
   display: flex;
   justify-content: auto;
   padding: auto;
@@ -163,25 +160,31 @@ h1 {
     color: white; }
 
 .bienvenida {
+  background-color: #2c3639;
   color: white;
   font-family: 'Inconsolata', monospace;
   font-size: 18px;
-  margin: 30px;
-  font-weight: bold;
-  background-color: gray;
+  margin: 10px;
   border-radius: 20px; }
   .bienvenida p {
     text-align: center;
     justify-content: auto;
-    margin: 50px;
-    height: auto; }
+    margin: 10px; }
 
 .main h3 {
   color: white;
   text-align: center;
   font-size: 2rem;
   font-family: 'Inconsolata', monospace;
-  padding: 20px;
+  padding-top: 20px;
+  text-decoration: underline; }
+
+.main h4 {
+  margin-top: 5rem;
+  color: white;
+  text-align: center;
+  font-size: 2rem;
+  font-family: 'Inconsolata', monospace;
   text-decoration: underline; }
 
 .menuVenta {
@@ -214,11 +217,15 @@ h1 {
 .productos input {
   width: 20px; }
 
-.carousel img {
-  width: 250px; }
-
-.carousel-control {
-  color: black; }
+.carousel-item {
+  flex-direction: row;
+  justify-content: center;
+  padding-left: 35%; }
+  .carousel-item img {
+    width: 100%;
+    padding: 0%;
+    width: 250px;
+    box-shadow: 15px 0px 0px 0px; }
 
 .noticias section {
   background-color: bisque;
@@ -264,7 +271,7 @@ form div {
   font-weight: bold; }
 
 .carrete {
-  padding-top: 70px;
+  padding-top: 10px;
   margin: 20px;
   display: flex;
   width: 700px;
